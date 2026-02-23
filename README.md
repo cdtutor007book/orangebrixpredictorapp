@@ -1,19 +1,25 @@
-# 🎈 Blank app template
+# 🍊 Orange Brix Predictor App
 
-A simple Streamlit app template for you to modify!
+코랩에서 학습한 `brix_model.joblib` 모델을 사용해 브릭스(Brix) 값을 예측하는 Streamlit 앱입니다.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 입력 변수
 
-### How to run it on your own machine
+- 최고기온 (°C)
+- 최저기온 (°C)
+- 일조시간 (시간)
 
-1. Install the requirements
+앱 내부에서 위 3개 입력값을 2차 다항특성으로 변환한 뒤 모델에 전달합니다.
 
+## 실행 방법
+
+1. 의존성 설치
+
+   ```bash
+   pip install -r requirements.txt
    ```
-   $ pip install -r requirements.txt
-   ```
 
-2. Run the app
+2. 앱 실행
 
-   ```
-   $ streamlit run streamlit_app.py
+   ```bash
+   streamlit run streamlit_app.py
    ```
