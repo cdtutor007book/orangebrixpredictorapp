@@ -20,7 +20,7 @@ def build_features(max_temp: float, min_temp: float, sunshine_hours: float) -> n
     return poly.fit_transform(base_input)
 
 
-st.title("🍊 오렌지 브릭스(Brix) 예측 앱")
+st.title("🍊제주감귤 당도예측 앱")
 st.write("최저기온, 최고기온, 가조시간을 조정하면 브릭스 값을 예측합니다.")
 
 model = load_model()
